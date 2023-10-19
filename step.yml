@@ -87,10 +87,13 @@ inputs:
     opts:
       title: "Output file name"
       is_required: true
-  - VERBOSE: false
+  - VERBOSE: "false"
     opts:
       title: "Verbose"
       category: Debug
+      value_options:
+      - "true"
+      - "false"
 
 outputs:
   - OUTPUT_FILE_NAME:

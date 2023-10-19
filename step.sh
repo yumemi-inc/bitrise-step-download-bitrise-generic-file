@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
-if [ "${VERBOSE}" ]; then
-    set -x
+if "${VERBOSE}"; then
+  set -x
 fi
 
 if [ -z "$TARGET_BITRISE_FILE_SLUG" ]; then
